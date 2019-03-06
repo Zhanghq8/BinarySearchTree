@@ -82,6 +82,35 @@ bool BinarySearchTree::Search(BSTNode* rootPtr, int data)
 	}
 }
 
+int BinarySearchTree::FindMin(BSTNode* rootPtr)
+{
+	if (rootPtr == NULL)
+	{
+		std::cout << "Error: The tree is empty." << std::endl;
+	}
+	else if (rootPtr-> left == NULL)
+	{
+		int min = rootPtr-> data;
+		return min;
+	}
+	return BinarySearchTree::FindMin(rootPtr-> left);
+}
+
+int BinarySearchTree::FindMax(BSTNode* rootPtr)
+{
+	if (rootPtr == NULL)
+	{
+		std::cout << "Error: The tree is empty." << std::endl;
+	}
+	else if (rootPtr-> right == NULL)
+	{
+		int max = rootPtr-> data;
+		return max;
+	}
+	return BinarySearchTree::FindMax(rootPtr-> right);
+}
+
+
 BinarySearchTree::~BinarySearchTree()
 {
 

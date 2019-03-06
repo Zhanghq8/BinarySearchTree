@@ -19,10 +19,15 @@ int main()
 	root = BST.Insert(root, 34);
 	root = BST.Insert(root, 15);
 	root = BST.Insert(root, 23);
-	std::cout << root << std::endl;
+	root = BST.Insert(root, 30);
+	root = BST.Insert(root, 18);
 	int number;
 	std::cout << "Enter the object you want to search: " << std::endl;
 	std::cin >> number;
 	std::cout << BST.Search(root, number) << std::endl;
+	int min = BST.FindMin(root);
+	int max = BST.FindMax(root);
+	std::cout << "The minimum value in the tree is: " << min << std::endl;
+	std::cout << "The maximum value in the tree is: " << max << std::endl;
 
 }

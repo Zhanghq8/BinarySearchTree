@@ -44,7 +44,11 @@ public:
     //search BSTNode
     bool Search(BSTNode* rootPtr, int data);
 
+    //find min value in the tree
+    int FindMin(BSTNode* rootPtr);
 
+    //find max value in the tree
+    int FindMax(BSTNode* rootPtr);
 
     
     //deconstructor
