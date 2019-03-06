@@ -14,9 +14,7 @@ int main()
 
 	BinarySearchTree BST;
 	BSTNode* root = NULL;
-	std::cout << root << std::endl;
 	root = BST.Insert(root, 20);
-	std::cout << root << std::endl;
 	root = BST.Insert(root, 10);
 	root = BST.Insert(root, 34);
 	root = BST.Insert(root, 15);
@@ -25,6 +23,6 @@ int main()
 	int number;
 	std::cout << "Enter the object you want to search: " << std::endl;
 	std::cin >> number;
-	BST.Search(root, number);
+	std::cout << BST.Search(root, number) << std::endl;
 
 }

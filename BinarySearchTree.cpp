@@ -73,27 +73,11 @@ bool BinarySearchTree::Search(BSTNode* rootPtr, int data)
 	else if (data <= rootPtr->data)
 	{
 		bool leftresult = BinarySearchTree::Search(rootPtr-> left, data);
-		if (leftresult == true)
-		{
-			std::cout << "Found the object." << std::endl;
-		}
-		else
-		{
-			std::cout << "No object found." << std::endl;
-		}
 		return leftresult;
 	}
-	else
+	else 
 	{
 		bool rightresult = BinarySearchTree::Search(rootPtr-> right, data);
-		if (rightresult == true)
-		{
-			std::cout << "Found the object." << std::endl;
-		}
-		else
-		{
-			std::cout << "No object found." << std::endl;
-		}
 		return rightresult;
 	}
 }
