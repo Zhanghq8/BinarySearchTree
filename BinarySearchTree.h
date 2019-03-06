@@ -50,6 +50,9 @@ public:
     //find max value in the tree
     int FindMax(BSTNode* rootPtr);
 
+    //find height of the tree
+    int FindHeight(struct BSTNode *rootPtr);
+
     
     //deconstructor
     ~BinarySearchTree();

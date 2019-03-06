@@ -29,5 +29,6 @@ int main()
 	int max = BST.FindMax(root);
 	std::cout << "The minimum value in the tree is: " << min << std::endl;
 	std::cout << "The maximum value in the tree is: " << max << std::endl;
-
+	int height = BST.FindHeight(root);
+	std::cout << "The height of the tree is: " << height << std::endl;
 }
