@@ -7,6 +7,7 @@
 //*****************************************************************************
 
 #include "BinarySearchTree.h"
+#include "Quene.h"
 
 BinarySearchTree::BinarySearchTree()
 {
@@ -25,11 +26,6 @@ BinarySearchTree::BinarySearchTree()
 // 	}
 // 	return count;
 // }
-
-BSTNode* BinarySearchTree::CreateRoot()
-{
-
-}
 
 BSTNode* BinarySearchTree::CreateNewNode(int data)
 {
@@ -132,6 +128,33 @@ int BinarySearchTree::FindHeight(BSTNode* rootPtr)
 		}
 	}
 	return height;
+}
+
+bool BinarySearchTree::displayBF(BSTNode* rootPtr)
+{
+	if (rootPtr == NULL)
+	{
+		std::cout << "Error: The tree is empty." << std::endl;
+		return false;
+	}
+	Quene_linkedlist quene;
+	quene.Enquene(rootPtr);
+	while(!quene.isEmpty())
+	{
+		BSTNode* current = quene.Front();
+		std::cout << current-> data << " ";
+		if (current-> left != NULL)
+		{
+			quene.Enquene(current->left);
+		}
+		if (current-> right != NULL)
+		{
+			quene.Enquene(current->right);
+		}
+		quene.Dequene();
+	}
+	std::cout << "" << std::endl;
+	return true;
 }
 
 

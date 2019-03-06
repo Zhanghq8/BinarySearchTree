@@ -32,9 +32,6 @@ public:
     // //returns the number of node in current tree
     // int countBSTNode();
 
-    //create root address
-    BSTNode* CreateRoot();
-
     //create BSTNode
     BSTNode* CreateNewNode(int data);
 
@@ -52,6 +49,9 @@ public:
 
     //find height of the tree
     int FindHeight(struct BSTNode *rootPtr);
+
+    //display the tree use breath-first algorithm
+    bool displayBF(BSTNode* rootPtr); 
 
     
     //deconstructor

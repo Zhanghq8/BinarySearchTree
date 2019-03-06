@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "BinarySearchTree.h"
+#include "Quene.h"
 
 int main()
 {
@@ -31,4 +32,5 @@ int main()
 	std::cout << "The maximum value in the tree is: " << max << std::endl;
 	int height = BST.FindHeight(root);
 	std::cout << "The height of the tree is: " << height << std::endl;
+	BST.displayBF(root);
 }
