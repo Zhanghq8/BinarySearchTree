@@ -110,7 +110,7 @@ int BinarySearchTree::FindMax(BSTNode* rootPtr)
 	return BinarySearchTree::FindMax(rootPtr-> right);
 }
 
-int BinarySearchTree::FindHeight(struct BSTNode *rootPtr)
+int BinarySearchTree::FindHeight(BSTNode* rootPtr)
 {
 	int height = -1;
 	if (rootPtr == NULL)
