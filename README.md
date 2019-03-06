@@ -7,4 +7,4 @@ BinarySearchTree practice(linked list based)
 - Ubuntu 16.04   
 ## Run
 - Use `cd` command to set the path.
-- Run `g++ test.cpp Quene.cpp BinarySearchTree.cpp -o test && ./test`.
+- Run `g++ test.cpp BinarySearchTree.cpp -o test && ./test`.
