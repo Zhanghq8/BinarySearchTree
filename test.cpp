@@ -33,4 +33,11 @@ int main()
 	int height = BST.FindHeight(root);
 	std::cout << "The height of the tree is: " << height << std::endl;
 	BST.displayBF(root);
+	BST.displayPreorder(root);
+	std::cout << "" << std::endl;
+	BST.displayInorder(root);
+	std::cout << "" << std::endl;
+	BST.displayPostorder(root);
+	std::cout << "" << std::endl;
+
 }

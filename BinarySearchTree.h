@@ -51,7 +51,16 @@ public:
     int FindHeight(struct BSTNode *rootPtr);
 
     //display the tree use breath-first algorithm
-    bool displayBF(BSTNode* rootPtr); 
+    bool displayBF(BSTNode* rootPtr);
+
+    //display the tree in preorder
+    void displayPreorder(BSTNode* rootPtr);
+
+    //display the tree in inorder
+    void displayInorder(BSTNode* rootPtr);
+    
+    //display the tree in postorder
+    void displayPostorder(BSTNode* rootPtr);
 
     
     //deconstructor

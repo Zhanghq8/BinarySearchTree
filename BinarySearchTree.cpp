@@ -157,6 +157,39 @@ bool BinarySearchTree::displayBF(BSTNode* rootPtr)
 	return true;
 }
 
+void BinarySearchTree::displayPreorder(BSTNode* rootPtr)
+{
+	if (rootPtr == NULL)
+	{
+		return;
+	}
+	std::cout << rootPtr-> data << " ";
+	BinarySearchTree::displayPreorder(rootPtr-> left);
+	BinarySearchTree::displayPreorder(rootPtr-> right);
+}
+
+void BinarySearchTree::displayInorder(BSTNode* rootPtr)
+{
+	if (rootPtr == NULL)
+	{
+		return;
+	}
+	BinarySearchTree::displayInorder(rootPtr-> left);
+	std::cout << rootPtr-> data << " ";
+	BinarySearchTree::displayInorder(rootPtr-> right);
+}
+
+void BinarySearchTree::displayPostorder(BSTNode* rootPtr)
+{
+	if (rootPtr == NULL)
+	{
+		return;
+	}
+	BinarySearchTree::displayPostorder(rootPtr-> left);
+	BinarySearchTree::displayPostorder(rootPtr-> right);
+	std::cout << rootPtr-> data << " ";
+}
+
 
 BinarySearchTree::~BinarySearchTree()
 {
